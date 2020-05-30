@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="CompanyAggregate\Scenarios\" />
     <Folder Include="Infrastructure\" />
   </ItemGroup>
 
