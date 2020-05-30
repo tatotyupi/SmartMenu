@@ -9,7 +9,6 @@ namespace SmartMenu.Web.Api.Model
     public class RegisterCompanyRequest
     {
         public string Name { get; set; }
-        public string Phone { get; set; }
         public string Email { get; set; }
         public string PhotoUrl { get; set; }
         public string CompanyId { get; set; }
