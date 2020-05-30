@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="FoodsAggregate\Behaviors\" />
+    <Folder Include="FoodsAggregate\Message\" />
+    <Folder Include="FoodsAggregate\Scenarios\" />
+    <Folder Include="FoodsAggregate\State\" />
     <Folder Include="Infrastructure\" />
   </ItemGroup>
 

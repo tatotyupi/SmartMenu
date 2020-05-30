@@ -6,10 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SmartMenu.DbContext;
+using SmartMenu.DbContext.Infrastructure;
 
 namespace SmartMenu.Web.Api
 {
@@ -26,6 +29,9 @@ namespace SmartMenu.Web.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services
+               .AddDbContext<SmartMenuDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SmartMenuDbContext")))
+               .AddSingleton(new SmartMenuDbContextFactory(Configuration.GetConnectionString("SmartMenuDbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
