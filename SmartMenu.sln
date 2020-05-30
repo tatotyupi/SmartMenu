@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMenu", "SmartMenu\SmartMenu.csproj", "{6FADCB76-1827-465A-8009-FE797030F394}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartMenu.Web.Api", "SmartMenu.Web.Api\SmartMenu.Web.Api.csproj", "{6B4BBD6E-9487-4E26-9289-7C6D75946580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMenu.Web.Api", "SmartMenu.Web.Api\SmartMenu.Web.Api.csproj", "{6B4BBD6E-9487-4E26-9289-7C6D75946580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartMenu.Domain", "SmartMenu.Domain\SmartMenu.Domain.csproj", "{27C9FB1B-4F99-4513-9D5D-25FAE3876C53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMenu.Domain", "SmartMenu.Domain\SmartMenu.Domain.csproj", "{27C9FB1B-4F99-4513-9D5D-25FAE3876C53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartMenu.DbContext", "SmartMenu.DbContext\SmartMenu.DbContext.csproj", "{9EF3454A-2362-4921-84E1-DDB815CA4227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMenu.DbContext", "SmartMenu.DbContext\SmartMenu.DbContext.csproj", "{9EF3454A-2362-4921-84E1-DDB815CA4227}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMenu.Web", "SmartMenu.Web\SmartMenu.Web.csproj", "{D65AEDE1-0043-4BFE-A38C-4377C2CFE4B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6FADCB76-1827-465A-8009-FE797030F394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FADCB76-1827-465A-8009-FE797030F394}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FADCB76-1827-465A-8009-FE797030F394}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FADCB76-1827-465A-8009-FE797030F394}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B4BBD6E-9487-4E26-9289-7C6D75946580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6B4BBD6E-9487-4E26-9289-7C6D75946580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4BBD6E-9487-4E26-9289-7C6D75946580}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{9EF3454A-2362-4921-84E1-DDB815CA4227}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EF3454A-2362-4921-84E1-DDB815CA4227}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EF3454A-2362-4921-84E1-DDB815CA4227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65AEDE1-0043-4BFE-A38C-4377C2CFE4B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65AEDE1-0043-4BFE-A38C-4377C2CFE4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65AEDE1-0043-4BFE-A38C-4377C2CFE4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65AEDE1-0043-4BFE-A38C-4377C2CFE4B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
