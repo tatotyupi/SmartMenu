@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SmartMenu.DbContext;
 
 namespace SmartMenu.DbContext.Migrations
 {
     [DbContext(typeof(SmartMenuDbContext))]
-    partial class SmartMenuDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200531124029_add_food")]
+    partial class add_food
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

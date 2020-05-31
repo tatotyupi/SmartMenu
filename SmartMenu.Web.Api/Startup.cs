@@ -76,7 +76,6 @@ namespace SmartMenu.Web.Api
             app.UseAuthorization();
             
             app.UseOpenApi();
-
             app.UseSwaggerUi3();
             
             app.UseEndpoints(endpoints =>
